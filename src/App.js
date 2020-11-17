@@ -5,19 +5,29 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <p>I am a React Learner</p>
+        <Person></Person>
+        <Person></Person>
+        <Person></Person>
       </header>
+    </div>
+  );
+}
+
+function Person(){
+  
+  const personStyle = {
+    border: "2px solid red",
+    margin: "10px",
+    padding: "10px"
+
+  }
+
+  return(
+    /*<div style= {{border: "2px solid red", margin: "10px", padding: "10px"}}>*/
+    <div style={personStyle}>
+      <h2>Hello, Person</h2>
+      <p>I am a Component</p>
     </div>
   );
 }
